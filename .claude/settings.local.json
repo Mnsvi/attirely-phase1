@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "Bash(npm install *)",
+      "Bash(uipro init *)",
+      "Bash(rtk find *)"
+    ]
+  }
+}

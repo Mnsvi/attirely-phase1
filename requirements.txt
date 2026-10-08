@@ -1,0 +1,10 @@
+pandas
+beautifulsoup4
+ftfy
+pyarrow
+open-clip-torch
+torch
+qdrant-client
+pillow
+dotenv
+fastembed

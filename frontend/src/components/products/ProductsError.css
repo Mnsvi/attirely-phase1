@@ -1,0 +1,77 @@
+/* ==========================================================
+   ATTIRELY — Products Error State Styles
+   ========================================================== */
+
+.products-error {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+  max-width: 540px;
+  margin: 40px auto;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  gap: 16px;
+}
+
+.products-error__icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-maroon-tint);
+  color: var(--color-maroon);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.products-error__title {
+  font-family: var(--font-brand);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  letter-spacing: 0.02em;
+}
+
+.products-error__message {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.products-error__query {
+  color: var(--color-maroon);
+  font-weight: 600;
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.products-error__retry {
+  margin-top: 12px;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-red);
+  color: var(--color-cream);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: 0 4px 14px rgba(28, 27, 25, 0.2);
+}
+
+.products-error__retry:hover {
+  background-color: var(--color-red-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(107, 33, 48, 0.35);
+}

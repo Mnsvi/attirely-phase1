@@ -1,0 +1,24 @@
+# FastAPI + server
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.32,<0.33
+
+# Config / settings
+pydantic>=2.0,<3.0
+pydantic-settings>=2.5,<3.0
+python-dotenv>=1.0,<2.0
+
+# Qdrant
+qdrant-client>=1.11,<2.0
+
+# CLIP retrieval (search_engine.py)
+open-clip-torch>=2.24,<3.0
+torch>=2.2
+
+# Cross-encoder reranking (search_engine.py)
+sentence-transformers>=3.0,<4.0
+
+# Image handling (query image decoding)
+Pillow>=10.0,<11.0
+
+# LLM (gemini_service.py)
+google-genai>=1.0,<2.0

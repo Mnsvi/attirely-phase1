@@ -1,0 +1,231 @@
+/* ==========================================================
+   ATTIRELY — Explore More Lookbook Styles
+   ========================================================== */
+
+.explore-page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-page {
+  flex: 1;
+  width: 100%;
+  padding: 40px 24px 80px;
+  overflow: hidden;
+}
+
+.explore-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.explore-kicker {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  color: var(--color-maroon);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.explore-title {
+  font-family: var(--font-brand);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--color-ink);
+  margin-bottom: 8px;
+}
+
+.explore-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+/* Canvas Container */
+.explore-container {
+  position: relative;
+  width: 1200px;
+  height: 720px;
+  margin: 0 auto;
+}
+
+/* Central Model */
+.model-wrap {
+  position: absolute;
+  left: 500px;
+  top: 45px;
+  width: 200px;
+  height: 675px;
+  z-index: 2;
+  filter: drop-shadow(0 16px 30px rgba(28, 27, 25, 0.25));
+}
+
+.model {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Clickable Items */
+.clickable-item {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.item-card-inner {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  box-shadow: 0 8px 24px rgba(28, 27, 25, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all var(--transition-fast);
+}
+
+.item-card-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-xs);
+}
+
+.clickable-item:hover .item-card-inner {
+  border-color: var(--color-blue);
+  box-shadow: 0 14px 32px rgba(30, 62, 116, 0.18);
+  transform: translateY(-4px);
+}
+
+.item-badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 4px 0;
+}
+
+.item-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-ink);
+}
+
+.item-action {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+/* Positions */
+.clickable-item.corset {
+  width: 160px;
+  left: 260px;
+  top: 30px;
+}
+
+.clickable-item.accessories {
+  width: 160px;
+  left: 835px;
+  top: 35px;
+}
+
+.clickable-item.purse {
+  width: 180px;
+  left: 165px;
+  top: 275px;
+}
+
+.clickable-item.skirt {
+  width: 180px;
+  left: 835px;
+  top: 370px;
+}
+
+.clickable-item.boots {
+  width: 160px;
+  left: 260px;
+  top: 500px;
+}
+
+/* Connector Lines */
+.line {
+  position: absolute;
+  height: 1.5px;
+  background: rgba(107, 33, 48, 0.7);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.corset-line {
+  width: 180px;
+  left: 360px;
+  top: 240px;
+}
+
+.accessories-line {
+  width: 140px;
+  left: 670px;
+  top: 140px;
+}
+
+.purse-line {
+  width: 180px;
+  left: 320px;
+  top: 385px;
+}
+
+.skirt-line {
+  width: 150px;
+  left: 695px;
+  top: 450px;
+}
+
+.boots-line {
+  width: 140px;
+  left: 380px;
+  top: 600px;
+}
+
+/* Responsive */
+@media (max-width: 1250px) {
+  .explore-container {
+    transform: scale(0.85);
+    transform-origin: top center;
+    margin-bottom: -100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .explore-container {
+    transform: scale(0.7);
+    transform-origin: top center;
+    margin-bottom: -220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-container {
+    transform: scale(0.52);
+    transform-origin: top center;
+    margin-bottom: -340px;
+  }
+}
+
+@media (max-width: 500px) {
+  .explore-container {
+    transform: scale(0.4);
+    transform-origin: top center;
+    margin-bottom: -420px;
+  }
+}
